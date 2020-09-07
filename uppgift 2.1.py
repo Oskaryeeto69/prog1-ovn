@@ -1,0 +1,5 @@
+
+a, b, c = 12, 12.0, '12.0'
+print(a)
+print(b)
+print(type (c))
