@@ -1,7 +1,11 @@
-pris = float(input('grundpris')) #Frågar grundpriset på produkten
-ålder = int(input('Ålder?')) #Frågar hur gammal man är
-if ålder < 12: # om man är yngre än 12 så är prisat hälften än vad grundpriset är
-    pris = pris * 0.5
-else: # om man är äldre än 12 så är priset en tiondel av grundpriset
-    pris = pris * 0.9
-print (f'pris{pris:.2f} kr')
+pris = float(input('Hur mycket kostar det per minut när du ringer?')) #Frågar priset per minut när du ringer
+minut = int(input('Hur många minuter ringer du per månad?')) #Frågar hur mycket man ringer per månad
+
+totpris = pris * minut
+
+if totpris > 300:
+    totpris = totpris * 0.9
+else:  
+    totpris = totpris
+
+print (f'Det kostar{totpris:.2f} kr')
