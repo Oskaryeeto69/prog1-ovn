@@ -1,8 +1,8 @@
 
 n = int(input('Skriv ett heltal?'))
 summa = 0
-k = 1
-while k <= n * n:
-    summa = summa + k
-    k = k + 1 
+i = 1
+while i <= n*n:
+    summa = summa + i*i
+    i = i + 1 
 print ('Summan blir', summa)
